@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrophyCars Buy-Page</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <section class="body">
+        <div class="topnav">
+            <div class="top-left">
+                <a href="cars.html">
+                    <p class="title-part1">Trophy</p>
+                    <p class="title-part2">Cars</p>
+                </a>
+            </div>
+            <div class="top-center">
+                <a href="buy.html" target="_blank" class="links">
+                    Buy
+                    <div class="under"></div>
+                </a>
+                <a href="sell.html" target="_blank" class="links">
+                    Sell
+                    <div class="under"></div>
+                </a>
+                <a href="" class="links">
+                    Lease
+                    <div class="under"></div>
+                </a>
+                <a href="" class="links">
+                    Rent
+                    <div class="under"></div>
+                </a>
+                <a href="" class="links">
+                    Finance
+                    <div class="under"></div>
+                </a>
+                <a href="" class="links">
+                    Transport
+                    <div class="under"></div>
+                </a>
+                <a href="" class="links">
+                    Storage
+                    <div class="under"></div>
+                </a>
+            </div>
+            <div class="top-right">
+                <button class="account">
+                    <svg viewBox="0 0 24 24" class="account-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8C10 5.23858 12.2386 3 15 3C17.7614 3 20 5.23858 20 8C20 10.7614 17.7614 13 15 13C12.2386 13 10 10.7614 10 8ZM15 5C13.3431 5 12 6.34315 12 8C12 9.65685 13.3431 11 15 11C16.6569 11 18 9.65685 18 8C18 6.34315 16.6569 5 15 5Z" fill="currentColor"></path> <path d="M5 8C5.55228 8 6 8.44772 6 9V11H8C8.55228 11 9 11.4477 9 12C9 12.5523 8.55228 13 8 13H6V15C6 15.5523 5.55228 16 5 16C4.44772 16 4 15.5523 4 15V13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4V9C4 8.44772 4.44772 8 5 8Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14C13.0062 14 11.0954 14.2542 9.64442 14.8986C8.16516 15.5554 7 16.7142 7 18.5C7 18.9667 7.08524 19.4978 7.40272 20.0043C7.72017 20.5106 8.20786 20.8939 8.83781 21.1789C10.0469 21.7259 11.9839 22 15 22C18.0161 22 19.9531 21.7259 21.1622 21.1789C21.7921 20.8939 22.2798 20.5106 22.5973 20.0043C22.9148 19.4978 23 18.9667 23 18.5C23 16.7142 21.8348 15.5554 20.3556 14.8986C18.9046 14.2542 16.9938 14 15 14ZM9 18.5C9 17.7858 9.40184 17.1946 10.4561 16.7264C11.5386 16.2458 13.1278 16 15 16C16.8722 16 18.4614 16.2458 19.5439 16.7264C20.5982 17.1946 21 17.7858 21 18.5C21 18.7236 20.9602 18.8502 20.9027 18.942C20.8452 19.0338 20.7079 19.1893 20.3378 19.3567C19.5469 19.7145 17.9839 20 15 20C12.0161 20 10.4531 19.7145 9.66219 19.3567C9.29214 19.1893 9.15483 19.0338 9.09728 18.942C9.03976 18.8502 9 18.7236 9 18.5Z" fill="currentColor"></path> </g></svg>
+
+                    <div class="account-divider"></div>
+
+                    <svg viewBox="0 0 24 24" class="account-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+                <div class="garage-container">
+                    <svg viewBox="0 0 24 24" class="garage" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0069 3.77169L4.00691 9.10502C3.36644 9.67432 3 10.4903 3 11.3472V21.2501H2C1.58579 21.2501 1.25 21.5858 1.25 22.0001C1.25 22.4143 1.58579 22.7501 2 22.7501H22C22.4142 22.7501 22.75 22.4143 22.75 22.0001C22.75 21.5858 22.4142 21.2501 22 21.2501H21V11.3472C21 10.4903 20.6336 9.67432 19.9931 9.10502L13.9931 3.77169C12.8564 2.76133 11.1436 2.76133 10.0069 3.77169ZM10 8.25005C9.58579 8.25005 9.25 8.58584 9.25 9.00005C9.25 9.41426 9.58579 9.75005 10 9.75005H14C14.4142 9.75005 14.75 9.41426 14.75 9.00005C14.75 8.58584 14.4142 8.25005 14 8.25005H10ZM14.052 11.25C14.9505 11.25 15.6997 11.25 16.2945 11.33C16.9223 11.4144 17.4891 11.6 17.9445 12.0555C18.4 12.511 18.5857 13.0778 18.6701 13.7056C18.7501 14.3004 18.75 15.0496 18.75 15.9481L18.75 21.2501H17.25H6.75H5.25L5.25 15.9481C5.24997 15.0496 5.24994 14.3004 5.32991 13.7056C5.41432 13.0778 5.59999 12.511 6.05546 12.0555C6.51093 11.6 7.07773 11.4144 7.70552 11.33C8.3003 11.25 9.04952 11.25 9.948 11.25H14.052Z" fill="currentColor"></path> <path opacity="0.5" d="M14.052 11.25H9.948H9.94797C9.04952 11.25 8.30029 11.2499 7.70552 11.3299C7.07773 11.4143 6.51093 11.6 6.05546 12.0555C5.59999 12.5109 5.41432 13.0777 5.32991 13.7055C5.24995 14.3003 5.24997 15.0495 5.25 15.9479V15.9479L5.25 21.25H18.75L18.75 15.948C18.75 15.0496 18.7501 14.3003 18.6701 13.7055C18.5857 13.0777 18.4 12.5109 17.9445 12.0555C17.4891 11.6 16.9223 11.4143 16.2945 11.3299C15.6997 11.2499 14.9505 11.25 14.052 11.25H14.052Z" fill="#ffae00"></path> <path d="M9 14.75C8.58579 14.75 8.25 15.0858 8.25 15.5C8.25 15.9142 8.58579 16.25 9 16.25H15C15.4142 16.25 15.75 15.9142 15.75 15.5C15.75 15.0858 15.4142 14.75 15 14.75H9Z" fill="#ffae00"></path> <path d="M9 17.75C8.58579 17.75 8.25 18.0858 8.25 18.5C8.25 18.9142 8.58579 19.25 9 19.25H15C15.4142 19.25 15.75 18.9142 15.75 18.5C15.75 18.0858 15.4142 17.75 15 17.75H9Z" fill="#ffae00"></path> </g></svg>
+
+                    <div class="counter">
+                        <p class="counter-word">2</p>
+                    </div>
+                </div>
+                <button class="mode">
+                    <div class="info-mode"></div>
+                </button>
+            </div>
+        </div>
+        <div class="options">
+            <div class="login">Login</div>
+            <div class="signup">Signup</div>
+        </div>
+        <section class="main-sect">
+            <div class="main-left">
+                <div class="hold1">
+                    <p class="main-head">Get your dream cars here</p>
+                    <p class="main-word">Here at Trophy Cars, we make sure that your dream car is always available. Our friendly and honourable staff give our very best to make sure that you leave with a smile on your face.</p>
+                    <button class="buy-btn"> BUY NOW</button>
+                </div>
+            </div>
+            <div class="main-center">
+                <img src="./pics/2021-jeep-grand-cherokee-l-front-face.jpg" alt="" class="main-pic1">
+                <img src="./pics/aaron-huber-8qYE6LGHW-c-unsplash.jpg" alt="" class="main-pic2">
+                <img src="./pics/brandon-atchison-_DzW3MT-iIY-unsplash.jpg" alt="" class="main-pic3">
+            </div>
+            <div class="main-right">
+                <div class="click1" onclick="Show1()">
+                    <svg fill="currentColor" class="diamond1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 260 140" enable-background="new 0 0 260 140" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M246,90.011V59.995c0-5.523-4.48-9.995-10-9.995h-50L156.97,6.416C155.11,3.634,152.34,2,149,2H28 c-5.52,0-10,4.446-10,9.969V30h-8c-4.42,0-8,3.56-8,7.983v40.022C2,82.427,5.58,86,10,86h8v20h16.458 c2.8-15.959,16.702-28.066,33.462-28.066c16.75,0,30.708,12.107,33.518,28.066h72.958c2.8-15.959,16.764-28.066,33.524-28.066 c16.75,0,30.624,12.107,33.434,28.066H250c4.42,0,8-3.563,8-7.985v-8.004H246z M86,50H30V13.97h56V50z M98,50V13.97h48L170,50H98z M68,138c-14.336,0-26.083-11.706-26.083-26.051s11.664-26.014,26-26.014s26,11.669,26,26.014S82.336,138,68,138z M67.917,99.943 c-6.617,0-12,5.386-12,12.006c0,6.621,5.383,12.006,12,12.006s12-5.386,12-12.006C79.917,105.329,74.534,99.943,67.917,99.943z M208,138c-14.337,0-26.083-11.706-26.083-26.051s11.663-26.014,26-26.014s26,11.669,26,26.014S222.337,138,208,138z M207.917,99.943c-6.617,0-12,5.386-12,12.006c0,6.621,5.383,12.006,12,12.006s12-5.386,12-12.006 C219.917,105.329,214.534,99.943,207.917,99.943z"></path> </g></svg>
+                </div>
+                <div class="click2" onclick="Show2()" >
+                    <svg height="200px" class="diamond2" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.07 20.07" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:currentColor;" d="M20.07,10.102c0,0-0.719-1.593-5.363-1.53c0,0-4.626-4.644-13.986,0.582 c0,0,0.205,1.018-0.566,1.018c-0.159,0.765-0.322,1.769,0.203,2.294c1.146,0,1.257,0,1.266,0c-0.028-0.123-0.044-0.25-0.044-0.381 c0-0.951,0.771-1.722,1.722-1.722s1.722,0.771,1.722,1.722c0,0.131-0.016,0.258-0.044,0.381h0.268h8.357h1.119 c-0.027-0.123-0.043-0.25-0.043-0.381c0-0.951,0.771-1.722,1.721-1.722c1.297,0,2.037,1.318,1.906,2.092l1.762-0.182 C19.801,10.687,20.07,10.102,20.07,10.102z M6.936,8.835H2.829c0,0,1.703-0.798,4.107-1.261V8.835z M7.827,8.835V7.427 c3.442-0.498,6.143,1.408,6.143,1.408H7.827z"></path> <path style="fill:currentColor;" d="M16.402,10.742c-0.734,0-1.33,0.595-1.33,1.33c0,0.733,0.596,1.329,1.33,1.329 s1.514-0.596,1.514-1.329C17.916,11.336,17.137,10.742,16.402,10.742z M16.402,12.582c-0.283,0-0.512-0.229-0.512-0.511 s0.229-0.512,0.512-0.512c0.281,0,0.512,0.229,0.512,0.512C16.914,12.353,16.683,12.582,16.402,12.582z"></path> <path style="fill:currentColor;" d="M3.268,10.742c-0.734,0-1.329,0.595-1.329,1.33c0,0.733,0.595,1.329,1.329,1.329 c0.735,0,1.33-0.596,1.33-1.329C4.597,11.336,4.003,10.742,3.268,10.742z M3.268,12.582c-0.282,0-0.512-0.229-0.512-0.511 s0.23-0.512,0.512-0.512s0.512,0.229,0.512,0.512C3.78,12.353,3.55,12.582,3.268,12.582z"></path> </g> </g> </g></svg>
+                </div>
+                <div class="click3" onclick="Show3()" >
+                    <svg height="200px" class="diamond3" width="70px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:currentColor;} </style> <g> <path class="st0" d="M317.238,245.229c-22.988,0-43.843,0.397-62.994,1.455l28.873-76.129l-37.368-56.898l-31.158-14.573 c0,0-39.82,80.011-44.91,159.792c-18.234,5.011-34.924,11.715-50.855,20.652C86.962,291.78,0,343.227,0,343.227l15.931,30.611 h59.722c1.95-12.659,8.884-23.571,18.604-31.035c-7.18,7.402-11.636,17.459-11.636,28.591c0,22.733,18.42,41.152,41.162,41.152 c22.724,0,41.144-18.419,41.144-41.152c0-11.142-4.464-21.198-11.645-28.608c9.73,7.463,16.664,18.383,18.614,31.052 c36.803,0,116.425,0,173.518,0l-1.94-5.426c-1.429-4.013-1.165-8.442,0.759-12.262c1.905-3.811,5.292-6.678,9.368-7.931 c0,0-6.608,0.671,11.495-3.669c-5.02,7.075-8.037,15.667-8.037,25.009c0,23.95,19.407,43.358,43.348,43.358 c23.96,0,43.367-19.408,43.367-43.358c0-17.105-9.986-31.749-24.364-38.806c2.823-0.838,5.231-1.606,6.845-2.223 c15.931-6.132,24.506,9.791,25.723,17.149c0.477,2.849,0.759,5.884,0.953,8.53C479.977,337.951,512,317.504,512,317.504v-37.976 C512,279.527,407.889,245.229,317.238,245.229z M221.79,118.666l13.955,6.528l2.7,4.128l-21.136,64.591l-18.12-12.985 C206.97,154.349,216.003,131.952,221.79,118.666z M197.143,188.083l17.89,12.818l-15.773,48.147l-14.344,3.158 C186.945,230.1,191.603,208.082,197.143,188.083z M32.463,345.67l-8.574-8.574l25.106-12.861l10.409,6.74L32.463,345.67z M123.783,392.874c-11.874,0-21.489-9.615-21.489-21.48c0-11.865,9.615-21.481,21.489-21.481c11.856,0,21.471,9.616,21.471,21.481 C145.254,383.259,135.639,392.874,123.783,392.874z M317.609,300.23l-33.839,49.118h-74.224l-39.291-63.303 c66.585-25.106,149.542-16.373,149.542-16.373L317.609,300.23z M400.407,392.186c-12.491,0-22.635-10.127-22.635-22.626 c0-12.5,10.144-22.636,22.635-22.636c12.509,0,22.636,10.136,22.636,22.636C423.044,382.059,412.916,392.186,400.407,392.186z"></path> </g> </g></svg>
+                </div>
+            </div>
+        </section>
+        <section class="nav-sect">
+            <nav class="firstnav">
+                <div class="nav-left">
+                    <p class="nav-left-head">MOST POPULAR</p>
+                </div>
+                <div class="nav-right">
+                    <div class="suv-btn" onclick="Tab1()">
+                        <svg fill="currentColor" class="suv-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 260 140" enable-background="new 0 0 260 140" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M246,90.011V59.995c0-5.523-4.48-9.995-10-9.995h-50L156.97,6.416C155.11,3.634,152.34,2,149,2H28 c-5.52,0-10,4.446-10,9.969V30h-8c-4.42,0-8,3.56-8,7.983v40.022C2,82.427,5.58,86,10,86h8v20h16.458 c2.8-15.959,16.702-28.066,33.462-28.066c16.75,0,30.708,12.107,33.518,28.066h72.958c2.8-15.959,16.764-28.066,33.524-28.066 c16.75,0,30.624,12.107,33.434,28.066H250c4.42,0,8-3.563,8-7.985v-8.004H246z M86,50H30V13.97h56V50z M98,50V13.97h48L170,50H98z M68,138c-14.336,0-26.083-11.706-26.083-26.051s11.664-26.014,26-26.014s26,11.669,26,26.014S82.336,138,68,138z M67.917,99.943 c-6.617,0-12,5.386-12,12.006c0,6.621,5.383,12.006,12,12.006s12-5.386,12-12.006C79.917,105.329,74.534,99.943,67.917,99.943z M208,138c-14.337,0-26.083-11.706-26.083-26.051s11.663-26.014,26-26.014s26,11.669,26,26.014S222.337,138,208,138z M207.917,99.943c-6.617,0-12,5.386-12,12.006c0,6.621,5.383,12.006,12,12.006s12-5.386,12-12.006 C219.917,105.329,214.534,99.943,207.917,99.943z"></path> </g></svg>
+
+                        <p class="suv-word">SUV</p>
+                    </div>
+                    <div class="jeep-btn" onclick="Tab2()">
+                        <svg fill="currentColor" class="jeep-icon" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 488.207 488.207" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M370.082,290.328c-30.056,0-54.508,24.452-54.508,54.508c0,30.055,24.452,54.507,54.508,54.507 c30.056,0,54.508-24.452,54.508-54.507C424.59,314.78,400.138,290.328,370.082,290.328z M370.082,385.342 c-22.336,0-40.508-18.171-40.508-40.507c0-22.336,18.172-40.508,40.508-40.508c22.336,0,40.508,18.172,40.508,40.508 C410.59,367.171,392.418,385.342,370.082,385.342z"></path> <path d="M146.322,290.328c-30.056,0-54.508,24.452-54.508,54.508c0,30.055,24.452,54.507,54.508,54.507 c30.056,0,54.508-24.452,54.508-54.507C200.83,314.78,176.378,290.328,146.322,290.328z M146.322,385.342 c-22.336,0-40.508-18.171-40.508-40.507c0-22.336,18.172-40.508,40.508-40.508c22.336,0,40.508,18.172,40.508,40.508 C186.83,367.171,168.658,385.342,146.322,385.342z"></path> <path d="M481.207,289.685h-14.575l-4.687-43.413c-0.289-2.68-2.092-4.956-4.635-5.851l-76.063-26.782l-67.9-86.871 c-1.327-1.698-3.361-2.69-5.515-2.69h-40.473v-10.459h36.362c3.866,0,7-3.134,7-7c0-3.866-3.134-7-7-7h-36.362v-3.754 c0-3.866-3.134-7-7-7c-3.866,0-7,3.134-7,7v3.754H99.869v-3.754c0-3.866-3.134-7-7-7c-3.866,0-7,3.134-7,7v3.754H49.507 c-3.866,0-7,3.134-7,7c0,3.866,3.134,7,7,7h36.362v10.459H49.507c-3.866,0-7,3.134-7,7v46.097c-2.069-0.701-4.277-1.098-6.58-1.098 H20.58c-11.348,0-20.58,9.232-20.58,20.58v76.488c0,11.348,9.232,20.58,20.58,20.58h15.347c2.303,0,4.511-0.397,6.58-1.098v21.302 h-3.062c-3.866,0-7,3.134-7,7c0,3.866,3.134,7,7,7h3.062v16.906c0,3.866,3.134,7,7,7h25.997c3.866,0,7-3.134,7-7 c0-35.189,28.629-63.818,63.818-63.818c35.189,0,63.818,28.629,63.818,63.818v11.173c0,3.866,3.134,7,7,7h82.121 c3.866,0,7-3.134,7-7v-11.173c0-35.189,28.63-63.818,63.82-63.818c35.19,0,63.818,28.629,63.818,63.818c0,3.866,3.134,7,7,7h40.307 c3.866,0,7-3.134,7-7v-48.15C488.207,292.819,485.073,289.685,481.207,289.685z M99.869,113.619h153.49v10.459H99.869V113.619z M35.927,279.725H20.58c-3.628,0-6.58-2.952-6.58-6.58v-76.488c0-3.628,2.952-6.58,6.58-6.58h15.347c3.628,0,6.58,2.952,6.58,6.58 v76.488C42.507,276.773,39.555,279.725,35.927,279.725z M370.082,267.017c-42.91,0-77.82,34.909-77.82,77.818v4.173h-52.194 l-10.014-21.079h48.39c3.866,0,7-3.134,7-7c0-3.866-3.134-7-7-7h-60.72c-11.982-27.574-39.47-46.912-71.401-46.912 c-40.549,0-73.955,31.177-77.506,70.818H56.507V138.079h247.912l67.058,85.795c0.823,1.053,1.93,1.848,3.191,2.292l73.832,25.996 l4.051,37.526h-27.63C410.842,275.688,391.458,267.017,370.082,267.017z M474.207,337.835h-26.619 c-1.116-12.453-5.181-24.069-11.485-34.147h34.073c0.02,0,0.039-0.003,0.058-0.003h3.973V337.835z"></path> <path d="M146.322,323.205c-11.927,0-21.63,9.704-21.63,21.631c0,11.927,9.703,21.63,21.63,21.63 c11.926,0,21.629-9.703,21.629-21.63C167.952,332.908,158.249,323.205,146.322,323.205z"></path> <path d="M370.082,323.205c-11.927,0-21.631,9.704-21.631,21.631c0,11.927,9.704,21.63,21.631,21.63 c11.927,0,21.63-9.703,21.63-21.63C391.712,332.908,382.009,323.205,370.082,323.205z"></path> <path d="M298.145,154.497c-1.325-1.726-3.376-2.737-5.552-2.737H187.306c-3.866,0-7,3.134-7,7v63.821c0,3.866,3.134,7,7,7h154.285 c2.665,0,5.1-1.514,6.278-3.905c1.179-2.391,0.898-5.244-0.726-7.358L298.145,154.497z M194.306,185.647l117.966,29.934H194.306 V185.647z"></path> <path d="M157.811,151.759H77.408c-1.862,0-3.646,0.742-4.96,2.061c-1.314,1.319-2.048,3.107-2.04,4.969l0.268,63.821 c0.016,3.855,3.146,6.971,7,6.971h80.135c3.866,0,7-3.134,7-7v-63.821C164.811,154.893,161.677,151.759,157.811,151.759z M84.647,215.581l-0.195-46.492l66.36,16.479v30.014H84.647z"></path> <path d="M205.573,243.025h-17.688c-3.866,0-7,3.134-7,7c0,3.866,3.134,7,7,7h17.688c3.866,0,7-3.134,7-7 C212.573,246.159,209.439,243.025,205.573,243.025z"></path> </g> </g></svg>
+
+                        <p class="jeep-word">Jeep</p>
+                    </div>
+                    <div class="luxury-btn" onclick="Tab3()">
+                        <svg height="200px" class="luxury-icon" width="70px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:currentColor;} </style> <g> <path class="st0" d="M317.238,245.229c-22.988,0-43.843,0.397-62.994,1.455l28.873-76.129l-37.368-56.898l-31.158-14.573 c0,0-39.82,80.011-44.91,159.792c-18.234,5.011-34.924,11.715-50.855,20.652C86.962,291.78,0,343.227,0,343.227l15.931,30.611 h59.722c1.95-12.659,8.884-23.571,18.604-31.035c-7.18,7.402-11.636,17.459-11.636,28.591c0,22.733,18.42,41.152,41.162,41.152 c22.724,0,41.144-18.419,41.144-41.152c0-11.142-4.464-21.198-11.645-28.608c9.73,7.463,16.664,18.383,18.614,31.052 c36.803,0,116.425,0,173.518,0l-1.94-5.426c-1.429-4.013-1.165-8.442,0.759-12.262c1.905-3.811,5.292-6.678,9.368-7.931 c0,0-6.608,0.671,11.495-3.669c-5.02,7.075-8.037,15.667-8.037,25.009c0,23.95,19.407,43.358,43.348,43.358 c23.96,0,43.367-19.408,43.367-43.358c0-17.105-9.986-31.749-24.364-38.806c2.823-0.838,5.231-1.606,6.845-2.223 c15.931-6.132,24.506,9.791,25.723,17.149c0.477,2.849,0.759,5.884,0.953,8.53C479.977,337.951,512,317.504,512,317.504v-37.976 C512,279.527,407.889,245.229,317.238,245.229z M221.79,118.666l13.955,6.528l2.7,4.128l-21.136,64.591l-18.12-12.985 C206.97,154.349,216.003,131.952,221.79,118.666z M197.143,188.083l17.89,12.818l-15.773,48.147l-14.344,3.158 C186.945,230.1,191.603,208.082,197.143,188.083z M32.463,345.67l-8.574-8.574l25.106-12.861l10.409,6.74L32.463,345.67z M123.783,392.874c-11.874,0-21.489-9.615-21.489-21.48c0-11.865,9.615-21.481,21.489-21.481c11.856,0,21.471,9.616,21.471,21.481 C145.254,383.259,135.639,392.874,123.783,392.874z M317.609,300.23l-33.839,49.118h-74.224l-39.291-63.303 c66.585-25.106,149.542-16.373,149.542-16.373L317.609,300.23z M400.407,392.186c-12.491,0-22.635-10.127-22.635-22.626 c0-12.5,10.144-22.636,22.635-22.636c12.509,0,22.636,10.136,22.636,22.636C423.044,382.059,412.916,392.186,400.407,392.186z"></path> </g> </g></svg>
+                        <p class="luxury-word">Luxury</p>
+                    </div>
+                    <div class="sportscar-btn" onclick="Tab4()">
+                        <svg height="200px" class="sportscar-icon" width="70px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.07 20.07" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:currentColor;" d="M20.07,10.102c0,0-0.719-1.593-5.363-1.53c0,0-4.626-4.644-13.986,0.582 c0,0,0.205,1.018-0.566,1.018c-0.159,0.765-0.322,1.769,0.203,2.294c1.146,0,1.257,0,1.266,0c-0.028-0.123-0.044-0.25-0.044-0.381 c0-0.951,0.771-1.722,1.722-1.722s1.722,0.771,1.722,1.722c0,0.131-0.016,0.258-0.044,0.381h0.268h8.357h1.119 c-0.027-0.123-0.043-0.25-0.043-0.381c0-0.951,0.771-1.722,1.721-1.722c1.297,0,2.037,1.318,1.906,2.092l1.762-0.182 C19.801,10.687,20.07,10.102,20.07,10.102z M6.936,8.835H2.829c0,0,1.703-0.798,4.107-1.261V8.835z M7.827,8.835V7.427 c3.442-0.498,6.143,1.408,6.143,1.408H7.827z"></path> <path style="fill:currentColor;" d="M16.402,10.742c-0.734,0-1.33,0.595-1.33,1.33c0,0.733,0.596,1.329,1.33,1.329 s1.514-0.596,1.514-1.329C17.916,11.336,17.137,10.742,16.402,10.742z M16.402,12.582c-0.283,0-0.512-0.229-0.512-0.511 s0.229-0.512,0.512-0.512c0.281,0,0.512,0.229,0.512,0.512C16.914,12.353,16.683,12.582,16.402,12.582z"></path> <path style="fill:currentColor;" d="M3.268,10.742c-0.734,0-1.329,0.595-1.329,1.33c0,0.733,0.595,1.329,1.329,1.329 c0.735,0,1.33-0.596,1.33-1.329C4.597,11.336,4.003,10.742,3.268,10.742z M3.268,12.582c-0.282,0-0.512-0.229-0.512-0.511 s0.23-0.512,0.512-0.512s0.512,0.229,0.512,0.512C3.78,12.353,3.55,12.582,3.268,12.582z"></path> </g> </g> </g></svg>
+                        <p class="sportscar-word">Sportscar</p>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="nav-row">
+                <div class="nav-row-first">
+                    <img src="./pics/0d82f913-f467-44c4-aa71-b3fcca2302c9.jpeg" alt="" class="nav-first-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-first-head">Crimson Chevrolet GTX-12</p>
+                    <p class="nav-first-model">2017 GTX-12 Version</p>
+                    <div class="price-container">
+                        <p class="price">$ 861K</p>
+                        <p class="speed">/ 15,203 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="nav-row-second">
+                    <img src="./pics/😘.jpeg" alt="" class="nav-second-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-second-head">Black SUV Super</p>
+                    <p class="nav-second-model">Super Model 2020</p>
+                    <div class="price-container">
+                        <p class="price">$ 937K</p>
+                        <p class="speed">/ 21,000 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row-third">
+                    <img src="./pics/Mercedes-Benz G63 AMG G Wagon 2022 _ Click on image to watch video.jpeg" alt="" class="nav-third-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-third-head">Mercedes-Benz G63 AMG G-Wagon</p>
+                    <p class="nav-third-model">2020 Model</p>
+                    <div class="price-container">
+                        <p class="price">$ 3M</p>
+                        <p class="speed">/ 32,790 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row-fourth">
+                    <img src="./pics/aad97ab7-67f3-4092-bd08-61058af23813.jpeg" alt="" class="nav-fourth-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-fourth-head">Shelby Black SUV</p>
+                    <p class="nav-fourth-model">2024 Model</p>
+                    <div class="price-container">
+                        <p class="price">$ 2.67M</p>
+                        <p class="speed">/ 34,130 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-row2">
+                <div class="nav-row2-first">
+                    <img src="./pics/Lets see all those Gladiators with lifts and bigger tires!.jpeg" alt="" class="nav-first-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-first-head">Dark-mist Jeep <strong>RUBICON</strong></p>
+                    <p class="nav-first-model">2017 Original</p>
+                    <div class="price-container">
+                        <p class="price">$ 602K</p>
+                        <p class="speed">/ 14,070 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="nav-row2-second">
+                    <img src="./pics/it's a jeep thing.png" alt="" class="nav-second-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-second-head">Carbon-Black Jeep Roadster</p>
+                    <p class="nav-second-model">2020 XIX</p>
+                    <div class="price-container">
+                        <p class="price">$ 400K</p>
+                        <p class="speed">/ 16,720 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row2-third">
+                    <img src="./pics/Jeep Wrangler.jpeg" alt="" class="nav-third-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-third-head">Black Jeep Wrangler</p>
+                    <p class="nav-third-model">2022 V.9</p>
+                    <div class="price-container">
+                        <p class="price">$ 3M</p>
+                        <p class="speed">/ 34,690 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row2-fourth">
+                    <img src="./pics/2020 Jeep Wrangler for sale near Spring, Humble, TX _ Buy a 2020 Jeep Wrangler in Houston, TX.png" alt="" class="nav-fourth-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-fourth-head">White Jeep Wrangler</p>
+                    <p class="nav-fourth-model">TX-2020 Supermodel</p>
+                    <div class="price-container">
+                        <p class="price">$ 3.2M</p>
+                        <p class="speed">/ 61,930 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-row3">
+                <div class="nav-row3-first">
+                    <img src="./pics/Mercedes-Benz Vision EQS, EV from The Future • The MAN.jpeg" alt="" class="nav-first-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-first-head">Mercedes-Benz Vision EQS</p>
+                    <p class="nav-first-model">2024 Model</p>
+                    <div class="price-container">
+                        <p class="price">$ 5.96M</p>
+                        <p class="speed">/ 58,080 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="nav-row3-second">
+                    <img src="./pics/🤍.jpeg" alt="" class="nav-second-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-second-head">Cream Rolls Poyce</p>
+                    <p class="nav-second-model">2021 Model</p>
+                    <div class="price-container">
+                        <p class="price">$ 6.1M</p>
+                        <p class="speed">/ 39,984 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row3-third">
+                    <img src="./pics/Rolls Royce Super Coupe.png" alt="" class="nav-third-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-third-head">Rolls Poyce Super Coupe</p>
+                    <p class="nav-third-model">2022 V.9</p>
+                    <div class="price-container">
+                        <p class="price">$ 6M</p>
+                        <p class="speed">/ 34,690 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row3-fourth">
+                    <img src="./pics/42f11b99-9f5d-45de-8088-55a31899e49e.jpeg" alt="" class="nav-fourth-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-fourth-head">Mercedes-Benz Carbon-black Super</p>
+                    <p class="nav-fourth-model">GCC 2023</p>
+                    <div class="price-container">
+                        <p class="price">$ 7.02M</p>
+                        <p class="speed">/ 61,930 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-row4">
+                <div class="nav-row4-first">
+                    <img src="./pics/Christmas 2022 came early at Kroymans Ferrari 🎄….jpeg" alt="" class="nav-first-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-first-head">Dark-grey Super Ferrari</p>
+                    <p class="nav-first-model">2023 Kroymans Supermodel</p>
+                    <div class="price-container">
+                        <p class="price">$ 7.1M</p>
+                        <p class="speed">/ 62,500 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="nav-row4-second">
+                    <img src="./pics/Luxury and stylish Lamborghini design_.jpeg" alt="" class="nav-second-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-second-head">Carbon-Black Lamborghini</p>
+                    <p class="nav-second-model">2024 Original Model</p>
+                    <div class="price-container">
+                        <p class="price">$ 2.1M</p>
+                        <p class="speed">/ 59,980 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row4-third">
+                    <img src="./pics/Audi Sports Car.png" alt="" class="nav-third-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-third-head">Silver Audi Super Sportscar</p>
+                    <p class="nav-third-model">2023 V.2</p>
+                    <div class="price-container">
+                        <p class="price">$ 3M</p>
+                        <p class="speed">/ 58,245 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-row4-fourth">
+                    <img src="./pics/yellow-sport-car-with-black-autotuning-road.jpg" alt="" class="nav-fourth-pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dots" width="280" height="4"><path fill="#495DCF" fill-opacity=".2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                    <p class="nav-fourth-head">Yellow Chevrolet Sportscar</p>
+                    <p class="nav-fourth-model">GMX 2017</p>
+                    <div class="price-container">
+                        <p class="price">$ 3.2M</p>
+                        <p class="speed">/ 61,930 km/h</p>
+                        <a href="">
+                            <button class="next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 24 24" width="24" height="24"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="currentColor"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="visit-sect">
+            <div class="visit-left">
+                <img src="pics/01_03_bugatti_chiron_super_sport_windtunnel_side_softbox.jpg" alt="" class="visit-left-pic">
+            </div>
+            <div class="visit-hold1">
+                <div class="blank"></div>
+                <div class="visit-contain">
+                    <p class="visit-head">VISIT OUR MAIN BUY PAGE <a href="" class="visit-link">Here</a></p>
+                </div>
+                <div class="visit-title">
+                    <p class="visit-title1">Trophy</p>
+                    <p class="visit-title2">Cars</p>
+                </div>
+            </div>
+        </section>
+        <section class="car-parts-sect">
+            <div class="car-parts-services">
+                <div class="service-head-container">
+                    <p class="car-service-head">We also provide a top-notch platform for Buying Car Parts</p>
+                    <p class="car-service-word">We provide fast deals, quick delivery and our customers are always satisfied. Our very friendly websites and dealers always put your choices and needs first.</p>
+                </div>
+                <div class="service-bottom-container">
+                    <div class="deals-hold">
+                        <div class="deal-icon-container">
+                            <img src="icons/icons8-deal-50.png" alt="" class="deal-icon">
+                        </div>
+                        <p class="deal-head">Quick Deals</p>
+                        <p class="deal-word">We provide very qick and perfect deals for our clients.</p>
+                    </div>
+                    <div class="delivery-hold">
+                        <div class="delivery-icon-container">
+                            <img src="icons/icons8-delivery-50.png" alt="" class="delivery-icon">
+                        </div>
+                        <p class="delivery-head">Fast Delivery</p>
+                        <p class="delivery-word">We deliver all client cars and car-parts in top condition and very quickly.</p>
+                    </div>
+                    <div class="customer-hold">
+                        <div class="customer-icon-container">
+                            <img src="icons/icons8-satisfied-customer-64.png" alt="" class="customer-icon">
+                        </div>
+                        <p class="customer-head">Satisfied Customers</p>
+                        <p class="customer-word">Customers' satisfaction is our number one priority.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="visit-part-sect">
+                <div class="visit-part-left">
+                    <p class="visit-part-left-head">We sell perfect and top condition car parts.</p>
+                    <p class="visit-part-left-word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at sint enim ipsa, doloribus suscipit reprehenderit molestias numquam quia et officia rerum sed, non laboriosam repellat tempora dolores id deleniti?</p>
+                    <p class="visit-info">Visit ou main Buying Parts Page</p>
+                    <a href="" class="link">Here</a>
+                </div>
+                <div class="visit-part-right"></div>
+            </div>
+        </section>
+        <div class="email-section">
+            <div class="email-signup-info">
+                <p class="email-signup-head">Sign Up for our Magazines and other exclusives</p>
+                <p class="email-signup-word">Sign up for our magazines and get 10% off your next purchase</p>
+            </div>
+            <div class="input-container">
+                <div class="main">
+                    <input type="email" name="email" class="email" placeholder="Enter your email">
+                    <button class="sub" onclick="Validate()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+                        <p class="sub-word">Sign Up</p>
+                    </button>
+                </div>
+                <p class="error">Please insert a valid email</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-head">
+                <div class="footer-top">
+                    <p class="footer-head-part1">Trophy</p>
+                    <p class="footer-head-part2">Cars</p>
+                </div>
+                <div class="footer-head-word">Buying and Selling has never been easier</div>
+            </div>
+            <div class="overview-sect">
+                <p class="overview-head">OVERVIEW</p>
+                <div class="link-section">
+                    <a href="buy.html" class="over-links">Buy</a>
+                    <a href="sell.html" target="_blank" class="over-links">Sell</a>
+                    <a href="" class="over-links">Lease</a>
+                    <a href="" class="over-links">Rent</a>
+                    <a href="" class="over-links">Finance</a>
+                    <a href="" class="over-links">Transport</a>
+                    <a href="" class="over-links">Storage</a>
+                    <a href="" class="over-links">Project</a>
+                    <a href="" class="over-links">Parts</a>
+                </div>
+            </div>
+            <div class="login-sect">
+                <p class="login-head">LOGIN</p>
+                <div class="login-body">
+                    <a href="" class="log-links">Buyer Login</a>
+                    <a href="" class="log-links">Seller Login</a>
+                    <a href="" class="log-links">Dealer Login</a>
+                    <a href="" class="log-links">Vendor Login</a>
+                </div>
+            </div>
+            <div class="contact-sect">
+                <p class="contact-head">CONTACTS</p>
+                <div class="contact-body">
+                    <a href="" class="contact-links">Help</a>
+                    <a href="" class="contact-links">Supports</a>
+                    <a href="" class="contact-links">Contact Us</a>
+                </div>
+            </div>
+            <div class="social-sect">
+                <p class="social-head">SOCIAL MEDIA</p>
+                <div class="social-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M16 8.24537V15.5C16 19.0899 13.0899 22 9.5 22C5.91015 22 3 19.0899 3 15.5C3 11.9101 5.91015 9 9.5 9C10.0163 9 10.5185 9.06019 11 9.17393V12.3368C10.5454 12.1208 10.0368 12 9.5 12C7.567 12 6 13.567 6 15.5C6 17.433 7.567 19 9.5 19C11.433 19 13 17.433 13 15.5V2H16C16 4.76142 18.2386 7 21 7V10C19.1081 10 17.3696 9.34328 16 8.24537Z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M13.0281 2.00098C14.1535 2.00284 14.7238 2.00879 15.2166 2.02346L15.4107 2.02981C15.6349 2.03778 15.8561 2.04778 16.1228 2.06028C17.1869 2.10944 17.9128 2.27778 18.5503 2.52528C19.2094 2.77944 19.7661 3.12278 20.3219 3.67861C20.8769 4.23444 21.2203 4.79278 21.4753 5.45028C21.7219 6.08694 21.8903 6.81361 21.9403 7.87778C21.9522 8.14444 21.9618 8.36564 21.9697 8.58989L21.976 8.78397C21.9906 9.27672 21.9973 9.8471 21.9994 10.9725L22.0002 11.7182C22.0003 11.8093 22.0003 11.9033 22.0003 12.0003L22.0002 12.2824L21.9996 13.0281C21.9977 14.1535 21.9918 14.7238 21.9771 15.2166L21.9707 15.4107C21.9628 15.6349 21.9528 15.8561 21.9403 16.1228C21.8911 17.1869 21.7219 17.9128 21.4753 18.5503C21.2211 19.2094 20.8769 19.7661 20.3219 20.3219C19.7661 20.8769 19.2069 21.2203 18.5503 21.4753C17.9128 21.7219 17.1869 21.8903 16.1228 21.9403C15.8561 21.9522 15.6349 21.9618 15.4107 21.9697L15.2166 21.976C14.7238 21.9906 14.1535 21.9973 13.0281 21.9994L12.2824 22.0002C12.1913 22.0003 12.0973 22.0003 12.0003 22.0003L11.7182 22.0002L10.9725 21.9996C9.8471 21.9977 9.27672 21.9918 8.78397 21.9771L8.58989 21.9707C8.36564 21.9628 8.14444 21.9528 7.87778 21.9403C6.81361 21.8911 6.08861 21.7219 5.45028 21.4753C4.79194 21.2211 4.23444 20.8769 3.67861 20.3219C3.12278 19.7661 2.78028 19.2069 2.52528 18.5503C2.27778 17.9128 2.11028 17.1869 2.06028 16.1228C2.0484 15.8561 2.03871 15.6349 2.03086 15.4107L2.02457 15.2166C2.00994 14.7238 2.00327 14.1535 2.00111 13.0281L2.00098 10.9725C2.00284 9.8471 2.00879 9.27672 2.02346 8.78397L2.02981 8.58989C2.03778 8.36564 2.04778 8.14444 2.06028 7.87778C2.10944 6.81278 2.27778 6.08778 2.52528 5.45028C2.77944 4.79194 3.12278 4.23444 3.67861 3.67861C4.23444 3.12278 4.79278 2.78028 5.45028 2.52528C6.08778 2.27778 6.81278 2.11028 7.87778 2.06028C8.14444 2.0484 8.36564 2.03871 8.58989 2.03086L8.78397 2.02457C9.27672 2.00994 9.8471 2.00327 10.9725 2.00111L13.0281 2.00098ZM12.0003 7.00028C9.23738 7.00028 7.00028 9.23981 7.00028 12.0003C7.00028 14.7632 9.23981 17.0003 12.0003 17.0003C14.7632 17.0003 17.0003 14.7607 17.0003 12.0003C17.0003 9.23738 14.7607 7.00028 12.0003 7.00028ZM12.0003 9.00028C13.6572 9.00028 15.0003 10.3429 15.0003 12.0003C15.0003 13.6572 13.6576 15.0003 12.0003 15.0003C10.3434 15.0003 9.00028 13.6576 9.00028 12.0003C9.00028 10.3434 10.3429 9.00028 12.0003 9.00028ZM17.2503 5.50028C16.561 5.50028 16.0003 6.06018 16.0003 6.74943C16.0003 7.43867 16.5602 7.99944 17.2503 7.99944C17.9395 7.99944 18.5003 7.43954 18.5003 6.74943C18.5003 6.06018 17.9386 5.49941 17.2503 5.50028Z"></path></svg>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+@font-face {
+    font-family: Overpass;
+    src: url(./fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Rubik;
+    src: url(./fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.topnav{
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top-left > a{
+    text-decoration-line: none;
+}
+.title-part1{
+    font-family: Overpass;
+    display: inline;
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+}
+.title-part2{
+    font-family: Overpass;
+    color: orange;
+    display: inline;
+    font-weight: 800;
+    font-size: 25px;
+    margin-left: -4px;
+}
+.top-center{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-center > a{
+    font-size: 16px;
+}
+.links{
+    font-family: Overpass;
+    text-decoration: none;
+    color: black;
+    padding-inline: 10px;
+    padding-block: 6px;
+}
+.under{
+    width: 0%;
+    background-color: orange;
+    height: 2px;
+}
+.links:hover > div{
+    width: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.top-right{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account{
+    background-color: white;
+    border-style: none;
+    font-family: Rubik;
+    color: orange;
+    width: 57px;
+    border-radius: 10px;
+    height: 37px;
+    font-size: 15px;
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+.account:hover{
+    background-color: rgb(253, 174, 28);
+    color: white !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.account > div:hover{
+    background-color: #fff;
+}
+.account-icon{
+    width: 23px;
+}
+.account-divider{
+    width: 1px;
+    height: 23px;
+    background-color: rgb(184, 184, 184);
+}
+.account-arrow {
+    width: 17px;
+    margin-left: -5px;
+}
+.garage-container{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.garage{
+    width: 45px;
+    height: 30px;
+    color: darkorange;
+    margin-top: -3px;
+}
+.counter{
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: -20px;
+}
+.counter-word{
+    font-size: 10px;
+    font-family: Overpass;
+    margin-top: 3px;
+    color: #fff;
+}
+.mode{
+    width: 50px;
+    height: 22px;
+    background-color: white;
+    border: 1px darkorange solid;
+    border-radius: 30px;
+}
+.info-mode{
+    width: 27px;
+    height: 27px;
+    background-color: orange;
+    border-style: none;
+    margin-top: -4px;
+    border-radius: 100%;
+}
+.info-mode:hover{
+    cursor: pointer;
+}
+.options{
+    position: absolute;
+    right: 100px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    top: 80px;
+    margin-left: 80%;
+    box-shadow: 0px 2px 3px 3px rgb(226, 226, 226);
+    display: none;
+}
+.login{
+    font-family: Overpass;
+    width: 100%;
+    height: 49%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+    color: orange;
+    transition-duration: 0.3s;
+}
+.signup{
+    font-family: Overpass;
+    width: 100%;
+    height: 49%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+    color: orange;
+    transition-duration: 0.3s;
+}
+.container-sect{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(pics/black-luxury-sport-car-driving-accross-forest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.conpic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url();
+}
+.section-hold{
+    width: 500px;
+    height: 240px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+}
+.container-head{
+    font-family: Overpass;
+    font-size: 39px;
+    font-weight: 800;
+    color: orange;
+}
+.container-word{
+    width: 80%;
+    font-family: Overpass;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: -90px;
+}
+.sell-btn{
+    width: 140px;
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+    font-family: Overpass;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-width: 1px;
+}
+.sell-btn:hover{
+    transition-duration: 0.3s;
+    color: orange;
+    background-color: #fff;
+    cursor: pointer;
+}
+.email-section{
+    width: 90%;
+    height: 150px;
+    background-color: rgb(0, 0, 45);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.email-signup-info{
+    width: 480px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.email-signup-head{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 28px;
+    color: #fff;
+}
+.email-signup-word{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a9a9a9;
+}
+.input-container{
+    width: 600px;
+    height: 70px;
+    margin-top: 20px;
+}
+.main{
+    width: 95%;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+}
+.email{
+    width: 400px;
+    height: 44px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(38, 38, 129);
+    padding-left: 15px;
+    color: white;
+    font-family: Overpass;
+    font-size: 15px;
+}
+.email::placeholder{
+    color: #bdbdbd;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.sub{
+    width: 120px;
+    height: 44px;
+    background-color: orange;
+    color: #fff;
+    display: flex;
+    border-style: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sub:hover{
+    background-color: #fff;
+    color: orange;
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+.sub-word{
+    font-family: Overpass;
+    font-size: 15px;
+    margin-top: 3px;
+}
+.error{
+    font-family: Overpass;
+    font-size: 15px;
+    color: rgb(245, 77, 110);
+    display: none;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 36);
+    display: flex;
+    justify-content: space-around;
+}
+.footer-head{
+    width: 250px;
+    height: 100px;
+}
+.footer-top{
+    width: 70%;
+    height: 35px;
+    display: flex;
+    font-family: Overpass;
+    font-weight: 500;
+    align-items: center;
+    font-size: 17px;
+    margin-left: 20px;
+}
+.footer-head-part1{
+    color: white;
+}
+.footer-head-part2{
+    color: orange;
+}
+.footer-head-word{
+    font-family: Rubik;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px;
+}
+.overview-sect{
+    width: 200px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.overview-head{
+    color: #fff;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.link-section{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.over-links{
+    font-family: Overpass;
+    text-decoration: none;
+    color: #fff;
+}
+.over-links:hover{
+    color: orange;
+    transition-duration: .0.4s;
+}
+.login-sect{
+    width: 200px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login-body{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.log-links{
+    font-family: Overpass;
+    text-decoration: none;
+    color: #fff;
+}
+.log-links:hover{
+    color: orange;
+    transition-duration: .0.4s;
+}
+.login-head{
+    color: #fff;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.contact-sect{
+    width: 200px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-body{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-links{
+    font-family: Overpass;
+    text-decoration: none;
+    color: #fff;
+}
+.contact-links:hover{
+    color: orange;
+    transition-duration: .0.4s;
+}
+.contact-head{
+    color: #fff;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.social-sect{
+    width: 230px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-head{
+    color: #fff;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.social-body{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-body > svg{
+    color: #fff;
+}
+.social-body > svg:hover{
+    color: orange;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+/* JavaScript Classes */
+.move{
+    transform: translateX(30px);
+    transition-duration: 0.5s;
+}
+.change{
+    background-color: rgb(217, 119, 0);
+    transition-duration: 0.5s;
+}
+.black{
+    background-color: black;
+    color: white !important;
+}
+.see{
+    display: flex;
+}
